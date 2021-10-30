@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="charset" content="utf-8">
+        <title>Sign Up to Bookademy</title>
+        <link rel="stylesheet" href="../../main.css">
+        <link rel="stylesheet" href="signUp.css">
+        <link rel="shortcut icon" href="../Images/Icons/logo.png">
+    </head>
+    <body>
+        <div class="nav">
+            <image id="logo" src="../Images/Icons/logo.png" draggable="false"></image>
+            <a id="home"href="../../index.html">Home</a>
+            <a id="signUp">Sign Up</a>
+            <a id="about">About</a>
+            <a id="contact">Contact Us</a>
+            <circle></circle>
+        </div>
+        <div class="settingsBox" id="settingsBox">
+            <div class="theme">
+                <button id="light">Light</button>
+                <button id="dark">Dark</button>
+                <button id="timed">Timed</button>
+            </div>
+            <div class="bot">
+                <button id="enable">Enable</button>
+                <button id="disable">Disable</button>
+            </div>
+            <div class="language">
+                <button id="en">English (US)</button>
+                <button id="fil">Filipino</button>
+            </div>
+        </div>
+        <image id="settings" src="../Images/Icons/settingLight.png" onclick="settings()" ></image>
+        <div class="content">
+            <h1>You are Signing Up</h1>
+            <form>
+                <p id="email">Email:</p><input id="emailField" type="text">
+                <p id="username">Username:</p><input id="usernameField" type="text">
+                <p id="password">Password:</p><input id="passwordField" type="password"><image id="passwordToggle" src="../Images/Icons/eyeLightInvisible.png"></image>
+                <button id="signUpBtn" type="submit">Sign Up</button>
+                <p id="bottomText1">Already have an account?</p><a href="signIn.html"> Log In</a><p id="bottomText2"> instead.</p>
+            </form>
+        </div>
+    </body>
+    <script src="../../index.js"></script>
+</html>
