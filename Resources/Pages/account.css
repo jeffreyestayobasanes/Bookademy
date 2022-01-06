@@ -1,0 +1,518 @@
+@media (max-width: 800px){
+    * {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        width: 100wv  ;
+    }
+    #menu {
+        position: relative;
+        width: 5vw  ;
+        height: 100vh;
+        background-color: gray;
+    }
+}
+
+
+
+@media (min-width: 801px){
+    * {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        width: 100vw  ;
+        overflow: hidden  ;
+        background-color: white;
+    }
+    #theme {
+        position: fixed  ;
+        bottom: 2%  ;
+        right: 1%  ;
+        z-index: 10  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: transparent  ;
+        background-image: url('../Images/Icons/inLightBulb.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+        border: none  ;
+    }
+    .main {
+        position: relative  ;
+        width: 120vw  ;
+        margin-left: -19vw  ;
+    }
+    #menu {
+        position: relative;
+        width: 25vw  ;
+        background-color: lightgray;
+    }
+    .main.expand {
+        animation-name: expand  ;
+        animation-fill-mode: forwards  ;
+        animation-duration: 1s  ;
+        animation-iteration-count: 1  ;
+    }
+    @keyframes expand {
+        from { margin-left: -19vw  ; }
+        to { margin-left: 0vw  ; }
+    }
+    .main.unexpand {
+        animation-name: unexpand  ;
+        animation-fill-mode: forwards  ;
+        animation-duration: 1s  ;
+        animation-iteration-count: 1  ;
+    }
+    @keyframes unexpand {
+        from { margin-left: 0vw  ; }
+        to { margin-left: -19vw  ; }
+    }
+    #menu #menuBtn {
+        display: block  ;
+        position: relative  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        float: right  ;
+        margin-top: 2%  ;
+        margin-right: 2%  ;
+        background-image: url('../Images/Icons/menuInLight.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+    }
+    .nav {
+        opacity: 0  ;
+    }
+    .nav.show {
+        animation-name: show  ;
+        animation-fill-mode: forwards  ;
+        animation-duration: 1s  ;
+        animation-iteration-count: 1  ;
+    }
+    @keyframes show {
+        from { opacity: 0  ; }
+        to { opacity: 1.0  ; }
+    }
+    .nav.unshow {
+        animation-name: unshow  ;
+        animation-fill-mode: forwards  ;
+        animation-duration: 1s  ;
+        animation-iteration-count: 1  ;
+    }
+    @keyframes unshow {
+        from { opacity: 1.0  ; }
+        to { opacity: 0  ; }
+    }
+    #libraryLink {
+        display: block  ;
+        position: relative  ;
+        width: 100%  ;
+    }
+    #library {
+        width: 100%  ;
+    }
+    #library div {
+        float: left  ;
+        margin-left: 2%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/libraryInLight.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+    }
+    #library p {
+        float: right  ;
+        margin-right: 2%  ;
+        font-size: 2.7vw  ;
+        margin-top: 2%  ;
+        color: #373737  ;
+    }
+    #feedLink {
+        position: relative  ;
+        width: 100%  ;
+        text-decoration: none  ;
+        background-color: transparent  ;
+    }
+    #feed {
+        display: block  ;
+        width: 100%  ;
+    }
+    #feed div {
+        float: left  ;
+        margin-left: 3%  ;
+        width: 4vw  ;
+        height: 4vw  ;
+        background-image: url('../Images/Icons/feedInLight.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+    }
+    #feed p {
+        float: right  ;
+        margin-right: 2%  ;
+        font-size: 2.7vw  ;
+        margin-top: 1%  ;
+        color: #373737  ;
+    }
+    #shareLink {
+        display: block  ;
+        position: relative  ;
+        width: 100%  ;
+    }
+    #share {
+        width: 100%  ;
+    }
+    #share div {
+        float: left  ;
+        margin-left: 1%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/shareInLight.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+    }
+    #share p {
+        float: right  ;
+        margin-right: 2%  ;
+        font-size: 2.3vw  ;
+        margin-top: 6%  ;
+        color: #373737  ;
+    }
+    #communityLink {
+        display: block  ;
+        position: relative  ;
+        width: 100%  ;
+    }
+    #community {
+        width: 100%  ;
+    }
+    #community div {
+        float: left  ;
+        margin-left: 2%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/communityInLight.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+    }
+    #community p {
+        float: right  ;
+        margin-right: 2%  ;
+        font-size: 2.5vw  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #messagesLink {
+        display: block  ;
+        position: relative  ;
+        width: 100%  ;
+    }
+    #messages {
+        width: 100%  ;
+    }
+    #messages div {
+        float: left  ;
+        margin-left: 2%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/messagesInLight.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+    }
+    #messages p {
+        float: right  ;
+        margin-right: 2%  ;
+        font-size: 2.7vw  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #accountLink {
+        display: block  ;
+        position: relative  ;
+        width: 100%  ;
+    }
+    #account {
+        width: 100%  ;
+    }
+    #account div {
+        float: left  ;
+        margin-left: 2%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/account.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+    }
+    #account p {
+        float: right  ;
+        margin-right: 2%  ;
+        font-size: 2.7vw  ;
+        margin-top: 5%  ;
+        color: #dda171  ;
+    }
+    #logoutLink {
+        display: block  ;
+        position: relative  ;
+        width: 100%  ;
+        margin-top: 55%  ;
+        margin-bottom: 10%  ;
+    }
+    #logout {
+        width: 100%  ;
+    }
+    #logout div {
+        float: left  ;
+        margin-left: 1%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/shareInLight.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+    }
+    #logout p {
+        float: right  ;
+        margin-right: 2%  ;
+        font-size: 2.3vw  ;
+        margin-top: 6%  ;
+        color: #373737  ;
+    }
+
+    #content {
+        position: relative  ;
+        width: 95vw  ;
+        height: 100vh  ;
+    }
+    h1 {
+        position: absolute  ;
+        width: 10%  ;
+        height: auto  ;
+        color: #dda171  ;
+        font-weight: normal  ;
+        font-size: 4vw  ;
+        margin-left: 36%  ;
+        margin-top: 2%  ;
+    }
+    #avatar {
+        position: absolute  ;
+        width: 12vw  ;
+        height: 12vw  ;
+        background-color: lightgray  ;
+        border-radius: 50%  ;
+        margin-top: 10%  ;
+        margin-left: 5%  ;
+    }
+    #avatar p {
+        width: 100%  ;
+        height: 50%  ;
+        margin-top: 25%  ;
+        border-radius: 50%  ;
+        font-size: 5vw  ;
+        text-align: center  ;
+        font-weight: lighter  ;
+        color: #373737  ;
+    }
+    #delLink {
+        position: absolute  ;
+        width: 12vw  ;
+        height: 4vw  ;
+        background-color: lightgray  ;
+        border-radius: 10px  ;
+        margin-top: 35%  ;
+        margin-left: 5%  ;
+    }
+    #delLink button {
+        width: 100%  ;
+        height: 100%  ;
+        background-color: transparent  ;
+        font-size: 1.5vw  ;
+        text-align: center  ;
+        color: #373737  ;
+    }
+    #delDesc {
+        position: absolute  ;
+        width: 18vw  ;
+        height: auto  ;
+        background-color: transparent  ;
+        border-radius: 10px  ;
+        margin-top: 40%  ;
+        margin-left: 2%  ;
+        text-indent: 1em  ;
+        text-align: justify  ;
+        font-size: 1.5vw  ;
+        color: #373737  ;
+    }
+    #name {
+        position: absolute  ;
+        width: 70%  ;
+        height: auto  ;
+        background-color: transparent  ;
+        border-radius: 10px  ;
+        margin-top: 10%  ;
+        margin-left: 25%  ;
+        text-align: left  ;
+        font-size: 2.5vw  ;
+        color: #373737  ;
+    }
+    #nameDesc {
+        position: absolute  ;
+        width: 70%  ;
+        height: auto  ;
+        background-color: transparent  ;
+        border-radius: 10px  ;
+        margin-top: 13%  ;
+        margin-left: 25%  ;
+        text-align: left  ;
+        font-size: 1.5vw  ;
+        color: #373737  ;
+    }
+    #username {
+        position: absolute  ;
+        width: 70%  ;
+        height: auto  ;
+        background-color: transparent  ;
+        border-radius: 10px  ;
+        margin-top: 18%  ;
+        margin-left: 25%  ;
+        text-align: left  ;
+        font-size: 2.5vw  ;
+        color: #373737  ;
+    }
+    #usernameDesc {
+        position: absolute  ;
+        width: 70%  ;
+        height: auto  ;
+        background-color: transparent  ;
+        border-radius: 10px  ;
+        margin-top: 21%  ;
+        margin-left: 25%  ;
+        text-align: left  ;
+        font-size: 1.5vw  ;
+        color: #373737  ;
+    }
+    #email {
+        position: absolute  ;
+        width: 70%  ;
+        height: auto  ;
+        background-color: transparent  ;
+        border-radius: 10px  ;
+        margin-top: 26%  ;
+        margin-left: 25%  ;
+        text-align: left  ;
+        font-size: 2.5vw  ;
+        color: #373737  ;
+    }
+    #emailDesc {
+        position: absolute  ;
+        width: 70%  ;
+        height: auto  ;
+        background-color: transparent  ;
+        border-radius: 10px  ;
+        margin-top: 29%  ;
+        margin-left: 25%  ;
+        text-align: left  ;
+        font-size: 1.5vw  ;
+        color: #373737  ;
+    }
+    #sex {
+        position: absolute  ;
+        width: 70%  ;
+        height: auto  ;
+        background-color: transparent  ;
+        border-radius: 10px  ;
+        margin-top: 34%  ;
+        margin-left: 25%  ;
+        text-align: left  ;
+        font-size: 2.5vw  ;
+        color: #373737  ;
+    }
+    #sexDesc {
+        position: absolute  ;
+        width: 70%  ;
+        height: auto  ;
+        background-color: transparent  ;
+        border-radius: 10px  ;
+        margin-top: 37%  ;
+        margin-left: 25%  ;
+        text-align: left  ;
+        font-size: 1.5vw  ;
+        color: #373737  ;
+    }
+    #privacy {
+        position: absolute  ;
+        width: 70%  ;
+        height: auto  ;
+        background-color: transparent  ;
+        border-radius: 10px  ;
+        margin-top: 42%  ;
+        margin-left: 25%  ;
+        text-align: left  ;
+        font-size: 2.5vw  ;
+        color: #373737  ;
+    }
+    #privacyDesc {
+        position: absolute  ;
+        width: 70%  ;
+        height: auto  ;
+        background-color: transparent  ;
+        border-radius: 10px  ;
+        margin-top: 45%  ;
+        margin-left: 25%  ;
+        text-align: left  ;
+        font-size: 1.5vw  ;
+        color: #373737  ;
+    }
+    #editLink {
+        position: absolute  ;
+        width: 12vw  ;
+        height: 4vw  ;
+        background-color: lightgray  ;
+        border-radius: 10px  ;
+        margin-top: 50%  ;
+        margin-left: 35%  ;
+    }
+    #editLink button {
+        width: 100%  ;
+        height: 100%  ;
+        background-color: transparent  ;
+        font-size: 1.5vw  ;
+        text-align: center  ;
+        color: #373737  ;
+    }
+    #reset {
+        position: absolute  ;
+        width: 12vw  ;
+        height: 4vw  ;
+        background-color: lightgray  ;
+        border-radius: 10px  ;
+        margin-top: 50%  ;
+        margin-left: 50%  ;
+    }
+    #reset button {
+        width: 100%  ;
+        height: 100%  ;
+        background-color: transparent  ;
+        font-size: 1.5vw  ;
+        text-align: center  ;
+        color: #373737  ;
+    }
+}

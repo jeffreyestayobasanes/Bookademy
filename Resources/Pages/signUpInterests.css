@@ -1,0 +1,727 @@
+@media (max-width: 800px) {
+    * {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        width: 100vw  ;
+    }
+    h1 {
+        width: 100%  ;
+        font-size: 7vw  ;
+        text-align: center  ;
+        margin-top: 5%  ;
+        font-weight: normal  ;
+    }
+    #content {
+        position: absolute  ;
+        margin-top: 14%  ;
+        width: 100vw  ;
+        height: 230vw  ;
+        background-color: transparent  ;
+    }
+    #horror {
+        position: absolute  ;
+        width: 40%  ;
+        height: 50vw  ;
+        margin-left: 8%  ;
+        margin-top: 2%  ;
+        background-color: lightgray ;
+        border-radius: 20px  ;
+    }
+    #horror div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-left: 10%  ;
+        margin-top: 5%  ;
+        background-image: url('../Images/Icons/horror.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #horror h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #romance {
+        display: block  ;
+        position: absolute  ;
+        width: 40%  ;
+        height: 50vw  ;
+        margin-left: 53%  ;
+        margin-top: 2%  ;
+        background-color: lightgray ;
+        border-radius: 20px  ;
+    }
+    #romance div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 15%  ;
+        background-image: url('../Images/Icons/romance.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #romance h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #comedy {
+        display: block  ;
+        position: absolute  ;
+        width: 40%  ;
+        height: 50vw  ;
+        margin-left: 8%  ;
+        margin-top: 65%  ;
+        background-color: lightgray ;
+        border-radius: 20px  ;
+    }
+    #comedy div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 15%  ;
+        background-image: url('../Images/Icons/comedy.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #comedy h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #law {
+        display: block  ;
+        position: absolute  ;
+        width: 40%  ;
+        height: 50vw  ;
+        margin-left: 53%  ;
+        margin-top: 65%  ;
+        background-color: lightgray ;
+        border-radius: 20px  ;
+    }
+    #law div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 15%  ;
+        background-image: url('../Images/Icons/law.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #law h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #slideArrow {
+        display: none  ;
+    }
+    #fantasy {
+        display: block  ;
+        position: absolute  ;
+        width: 40%  ;
+        height: 50vw  ;
+        margin-left: 8%  ;
+        margin-top: 130%  ;
+        background-color: lightgray ;
+        border-radius: 20px  ;
+    }
+    #fantasy div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/fantasy.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #fantasy h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #legend {
+        display: block  ;
+        position: absolute  ;
+        width: 40%  ;
+        height: 50vw  ;
+        margin-left: 53%  ;
+        margin-top: 130%  ;
+        background-color: lightgray ;
+        border-radius: 20px  ;
+    }
+    #legend div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/legend.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #legend h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #check1 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 53%  ;
+        margin-left: 25%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 4vw  ;
+        color: white  ;
+
+    }
+    #check2 {
+        display: none  ;
+        position: absolute  ;
+        margin-left: 70%  ;  /* 23 63*/
+        margin-top: 53%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 4vw  ;
+        color: white  ;
+
+    }
+    #check3 {
+        display: none  ;
+        position: absolute  ;
+        margin-left: 25%  ;  /* 23 63*/
+        margin-top: 116%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 4vw  ;
+        color: white  ;
+
+    }
+    #check4 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 116%  ;
+        margin-left: 70%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 4vw  ;
+        color: white  ;
+
+    }
+    #check5 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 181%  ;
+        margin-left: 25%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 4vw  ;
+        color: white  ;
+    }
+    #check6 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 181%  ;
+        margin-left: 70%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 4vw  ;
+        color: white  ;
+    }
+    form {
+        width: 100%  ;
+    }
+    form input {
+        display: none  ;
+    }
+    #previous {
+        position: fixed  ;
+        margin-top: 120% ;
+        margin-left: 5%  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        background-image: url('../Images/Icons/left.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #next {
+        position: fixed  ;
+        margin-top: 120% ;
+        margin-left: 85%  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        background-image: url('../Images/Icons/right.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #bar {
+        position: fixed  ;
+        width: 70vw  ;
+        height: 2vw  ;
+        margin-top: 145%  ;
+        margin-left: 15%  ;
+        background-color: chocolate  ;
+    }
+    #progress {
+        bottom: 10%  ;
+        width: 65%  ;
+        height: 2vw  ;
+        background-color: yellowgreen  ;
+
+    }
+    #number {
+        position: relative  ;
+        width: 7vw  ;
+        height: 7vw  ;
+        margin-left: 65%  ;
+        margin-top: -8%  ;
+        padding-top: 1%  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        border: solid thin white  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        color: white  ;
+    }
+}
+
+
+@media (min-width: 801px) {
+    * {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        width: 100vw  ;
+        overflow: hidden  ;
+    }
+    h1 {
+        width: 100%  ;
+        font-size: 4vw  ;
+        text-align: center  ;
+        margin-top: 5%  ;
+        font-weight: normal  ;
+    }
+    #content {
+        position: absolute  ;
+        margin-top: 14%  ;
+        width: 200vw  ;
+        background-color: transparent  ;
+        height: auto  ;
+    }
+    .content.slideToRight {
+        animation-name: slideToRight  ;
+        animation-fill-mode: forwards  ;
+        animation-iteration-count: 1  ;
+        animation-timing-function: ease-in-out  ;
+        animation-duration: 1.5s  ;
+    }
+    @keyframes slideToRight {
+        from { margin-left: 0%  ; }
+        to { margin-left: -92%  ;}
+    }
+    .content.slideToLeft {
+        animation-name: slideToLeft  ;
+        animation-fill-mode: forwards  ;
+        animation-iteration-count: 1  ;
+        animation-timing-function: ease-in-out  ;
+        animation-duration: 1.5s  ;
+    }
+    @keyframes slideToLeft {
+        from { margin-left: -92%  ; }
+        to { margin-left: 0%  ; }
+    }
+    #horror {
+        position: absolute  ;
+        width: 20vw  ;
+        height: 25vw  ;
+        margin-left: 2%  ;
+        background-color: lightgray ;
+        border-radius: 20px  ;
+    }
+    #horror div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-left: 10%  ;
+        margin-top: 5%  ;
+        background-image: url('../Images/Icons/horror.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #horror h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #romance {
+        position: absolute  ;
+        width: 20vw  ;
+        height: 25vw  ;
+        margin-left: 13%  ;
+        background-color: lightgray ;
+        border-radius: 20px  ;
+    }
+    #romance div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 15%  ;
+        background-image: url('../Images/Icons/romance.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #romance h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #comedy {
+        position: absolute  ;
+        width: 20vw  ;
+        height: 25vw  ;
+        margin-left: 24%  ;
+        background-color: lightgray ;
+        border-radius: 20px  ;
+    }
+    #comedy div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 15%  ;
+        background-image: url('../Images/Icons/comedy.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #comedy h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #law {
+        position: absolute  ;
+        width: 20vw  ;
+        height: 25vw  ;
+        background-color: lightgray ;
+        margin-left: 35%  ;
+        border-radius: 20px  ;
+    }
+    #law div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 15%  ;
+        background-image: url('../Images/Icons/law.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #law h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #slideArrow {
+        position: absolute  ;
+        margin-left: 46%  ;
+        margin-top: 5%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        border-radius: 50%  ;
+        border: solid thin black  ;
+        background-image: url('../Images/Icons/right.png')  ;
+        background-size: contain  ;
+        background-color: transparent  ;
+    }
+    #fantasy {
+        position: absolute  ;
+        width: 20vw  ;
+        height: 25vw  ;
+        background-color: lightgray ;
+        margin-left: 50%  ;
+        border-radius: 20px  ;
+    }
+    #fantasy div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/fantasy.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #fantasy h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #legend {
+        position: absolute  ;
+        width: 20vw  ;
+        height: 25vw  ;
+        background-color: lightgray ;
+        margin-left: 61%  ;
+        border-radius: 20px  ;
+    }
+    #legend div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/legend.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #legend h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #check1 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 13%  ;
+        margin-left: 6.2%  ;  /* 23 63*/
+        width: 3vw  ;
+        height: 3vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 2vw  ;
+        color: white  ;
+
+    }
+    #check2 {
+        display: none  ;
+        position: absolute  ;
+        margin-left: 17%  ;  /* 23 63*/
+        margin-top: 13%  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 2vw  ;
+        color: white  ;
+
+    }
+    #check3 {
+        display: none  ;
+        position: absolute  ;
+        margin-left: 28.3%  ;  /* 23 63*/
+        margin-top: 13%  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 2vw  ;
+        color: white  ;
+
+    }
+    #check4 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 13%  ;
+        margin-left: 39.3%  ;  /* 23 63*/
+        width: 3vw  ;
+        height: 3vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 2vw  ;
+        color: white  ;
+
+    }
+    #check5 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 13%  ;
+        margin-left: 54.2%  ;  /* 23 63*/
+        width: 3vw  ;
+        height: 3vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 2vw  ;
+        color: white  ;
+    }
+    #check6 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 13%  ;
+        margin-left: 65.2%  ;  /* 23 63*/
+        width: 3vw  ;
+        height: 3vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 2vw  ;
+        color: white  ;
+    }
+    form {
+        width: 100%  ;
+    }
+    form input {
+        display: none  ;
+    }
+    #previous {
+        position: absolute  ;
+        margin-top: 35% ;
+        margin-left: 5%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/left.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #next {
+        position: absolute  ;
+        margin-top: 35% ;
+        margin-left: 85%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/right.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #bar {
+        position: absolute  ;
+        width: 60vw  ;
+        height: 0.4vw  ;
+        margin-top: 50%  ;
+        margin-left: 20%  ;
+        background-color: chocolate  ;
+    }
+    #progress {
+        bottom: 10%  ;
+        width: 75%  ;
+        height: 100%  ;
+        background-color: yellowgreen  ;
+
+    }
+    #number {
+        position: absolute  ;
+        width: 4vw  ;
+        height: 4vw  ;
+        margin-left: 75%  ;
+        margin-top: -3%  ;
+        padding-top: 1%  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        border: solid thin white  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+    }
+}

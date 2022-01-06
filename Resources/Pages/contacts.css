@@ -1,0 +1,1189 @@
+@media (max-width: 800px){
+    * {
+        -moz-user-select: -moz-none  ;
+        -khtml-user-select: none  ;
+        -webkit-user-select: none  ;
+        -ms-user-select: none  ;
+        user-select: none  ;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif  ;
+    }
+    ::-webkit-scrollbar {
+        width: 0.7vw  ;
+        background-color: gainsboro  ;
+    }
+    ::-webkit-scrollbar-thumb  {
+        background-color: palevioletred  ;
+        border-radius: 10px 10px 10px 10px  ;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: mediumvioletred  ;
+    }
+    body {
+        width: 100vw  ;
+        background-color: white  ;
+    }
+    .nav {
+        position: fixed  ;
+        top: 0  ;
+        width: 100%  ;
+        height: 8vw  ;
+        background-color: white  ;
+        z-index: 10  ;
+    }
+    .nav.fadeInShadow {
+        transition: .5s  ;
+        box-shadow: 0 0 10px 0  ;
+    }
+    .nav.fadeOutShadow {
+        transition: .5s  ;
+        box-shadow: 0 0 0 0  ;
+    }
+    #logo {
+        position: absolute   ;
+        width: 15%  ;
+        height: 8vw  ;
+        background-color: transparent  ;
+    }
+    #home, #signUp, #about, #contact {
+        position: absolute  ;
+        color: #b0784b  ;
+        font-size: 3.5vw  ;
+        text-decoration: none  ;
+    }
+    #home {
+        margin: 2% 0 0 40%   ;
+    }
+    #signUp {
+        margin: 2% 0 0 53%   ;
+    }
+    #about {
+        margin: 2% 0 0 68%   ;
+    }
+    #contact {
+        margin: 2% 0 0 80%   ;
+    }
+    circle {
+        position: absolute;
+        margin-top: 6%  ;
+        margin-left: 88%  ;
+        width: 0.5vw  ;
+        height: 0.5vw  ;
+        border: solid thin #b0784b  ;
+        border-radius: 100%  ;
+        background-color: #b0784b  ;
+    }
+    #moreHint {
+        opacity: 0  ;
+        position: fixed  ;
+        bottom: 2%  ;
+        width: 8vw ;
+        height: 8vw  ;
+        margin: 0 0 0 75%  ;
+        background-color: transparent  ;
+        z-index: 10 ;
+    }
+    #moreHint.show {
+        animation-name: fadeArrow  ;
+        animation-duration: 1s  ;
+        animation-iteration-count: 5  ;
+        animation-timing-function: ease-in-out  ;
+    }
+    @keyframes fadeArrow {
+        0% {
+            opacity: 0  ;
+        }
+        50% {
+            opacity: 1  ;
+        }
+        100% {
+            opacity: 0  ;
+        }
+    }
+    .settingsBox {
+        display: none  ;
+        position: fixed  ;
+        z-index: 10  ;
+        margin: 36% 0 0 79%  ;
+        background-color:  white  ;
+        border: solid thin skyblue  ;
+        border-radius: 10px 10px 10px 10px  ;
+        background-size: cover  ;
+        width: 20%  ;
+        height: 12vw  ;
+    }
+    .settingsBox .theme {
+        width: 100%  ;
+        height: 33%  ;
+        background-color: transparent  ;
+        border-bottom-style: solid  ;
+        border-bottom-color: gray  ;
+    }
+    .settingsBox .theme button{
+        width: 33%  ;
+        height: 100%  ;
+        background-color: transparent  ;
+        text-align: center  ;
+        font-size: 1.5vw  ;
+        color: black  ;
+    }
+    .settingsBox .bot {
+        width: 100%  ;
+        height: 33%  ;
+        background-color: transparent  ;
+        border-bottom-style: solid  ;
+        border-bottom-color: gray  ;
+    }
+    .settingsBox .bot button{
+        width: 50%  ;
+        height: 100%  ;
+        text-align: center  ;
+        font-size: 1.5vw  ;
+        color: black  ;
+        background-color: transparent  ;
+    }
+    .settingsBox .language {
+        width: 100%  ;
+        height: 33%  ;
+        background-color: transparent  ;
+    }
+    .settingsBox .language button {
+        width: 50%  ;
+        height: 100%  ;
+        text-align: center  ;
+        font-size: 1.5vw  ;
+        color: black  ;
+        background-color: transparent  ;
+    }
+    #settings {
+        position: fixed  ;
+        margin: 85vh 0 0 90%  ;
+        z-index: 10  ;
+        width: 8vw  ;
+        height: 8vw  ;
+        background-color: transparent  ;
+    }
+    #summaryTop {
+        position: absolute  ;
+        margin: 15% 0 0 5%  ;
+        width: 90%  ;
+        font-size: 3vw  ;
+        text-align: center  ;
+        text-align: left  ;
+        text-align: justify ;
+        text-indent: 2em  ;
+        color: #373737;
+    }
+    #feedback {
+        position: absolute  ;
+        width: 40%  ;
+        height: 7vw  ;
+        margin: 35% 0 0 5%  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        border-radius: 20px 20px 20px 20px;
+        background-color: lightgray  ;
+        opacity: 0.5  ;
+    }
+    #developers {
+        position: absolute  ;
+        width: 40%  ;
+        height: 7vw  ;
+        margin: 35% 0 0 55%  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        border-radius: 20px 20px 20px 20px;
+        background-color: lightgray  ;
+    }
+    #feedbackLink {
+        width: 100%  ;
+        text-align: center  ;
+        color: #373737;
+    }
+    .devList {
+        position: absolute  ;
+        width: 100vw  ;
+        height: auto  ;
+        margin-top: 50%  ;
+        background-color: transparent  ;
+    }
+    #jason {
+        position: relative  ;
+        width: 65vw  ;
+        height: 85vw  ;
+        background-color: #d9d9d9 ;
+        margin-left: 17.5%  ;
+        border-radius: 20px  ;
+    }
+    #jason img {
+        position: relative  ;
+        width: 30vw  ;
+        height: 30vw  ;
+        border-radius: 50%  ;
+        margin-left: 27%  ;
+        margin-top: 5%  ;
+    }
+    #jason #desc1 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: bold  ;
+        margin-top: 5%  ;
+    }
+    #jason #desc2 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: normal  ;
+        color: #373737  ;
+    }
+    #jason #name {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: normal  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #jason #email {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        margin-top: 5%  ;
+        margin-left: 2%  ;
+    }
+    #jason #emailLink {
+        position: relative  ;
+        width: 75%  ;
+        height: 10vw  ;
+        margin-top: 6%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 4vw  ;
+    }
+    #jason #facebook {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        margin-top: 3%  ;
+        margin-left: 2%;
+    }
+    #jason #facebookLink {
+        position: relative  ;
+        width: 75%  ;
+        height: auto  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 4vw  ;
+    }
+
+
+
+    
+    #rose {
+        position: relative  ;
+        width: 65vw  ;
+        height: 85vw  ;
+        background-color: #d9d9d9 ;
+        margin-left: 17.5%  ;
+        margin-top: 5%  ;
+        border-radius: 20px  ;
+    }
+    #rose img {
+        position: relative  ;
+        width: 30vw  ;
+        height: 30vw  ;
+        border-radius: 50%  ;
+        margin-left: 27%  ;
+        margin-top: 5%  ;
+    }
+    #rose #desc1 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: bold  ;
+        margin-top: 5%  ;
+    }
+    #rose #desc2 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: normal  ;
+        color: #373737  ;
+    }
+    #rose #name {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: normal  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #rose #email {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        margin-top: 5%  ;
+        margin-left: 2%  ;
+    }
+    #rose #emailLink {
+        position: relative  ;
+        width: 75%  ;
+        height: 10vw  ;
+        margin-top: 6%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 4vw  ;
+    }
+    #rose #facebook {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        margin-top: 3%  ;
+        margin-left: 2%;
+    }
+    #rose #facebookLink {
+        position: relative  ;
+        width: 75%  ;
+        height: auto  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 4vw  ;
+    }
+
+
+    #jenny {
+        position: relative  ;
+        width: 65vw  ;
+        height: 85vw  ;
+        background-color: #d9d9d9 ;
+        margin-left: 17.5%  ;
+        margin-top: 5%  ;
+        border-radius: 20px  ;
+    }
+    #jenny img {
+        position: relative  ;
+        width: 30vw  ;
+        height: 30vw  ;
+        border-radius: 50%  ;
+        margin-left: 27%  ;
+        margin-top: 5%  ;
+    }
+    #jenny #desc1 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: bold  ;
+        margin-top: 5%  ;
+    }
+    #jenny #desc2 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: normal  ;
+        color: #373737  ;
+    }
+    #jenny #name {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: normal  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #jenny #email {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        margin-top: 5%  ;
+        margin-left: 2%  ;
+    }
+    #jenny #emailLink {
+        position: relative  ;
+        width: 75%  ;
+        height: 10vw  ;
+        margin-top: 6%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 4vw  ;
+    }
+    #jenny #facebook {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        margin-top: 3%  ;
+        margin-left: 2%;
+    }
+    #jenny #facebookLink {
+        position: relative  ;
+        width: 75%  ;
+        height: auto  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 4vw  ;
+    }
+    #slideArrow {
+        display: none  ;
+    }
+
+    #norly {
+        position: relative  ;
+        width: 65vw  ;
+        height: 85vw  ;
+        background-color: #d9d9d9 ;
+        margin-left: 17.5%  ;
+        margin-top: 5%  ;
+        border-radius: 20px  ;
+    }
+    #norly img {
+        position: relative  ;
+        width: 30vw  ;
+        height: 30vw  ;
+        border-radius: 50%  ;
+        margin-left: 27%  ;
+        margin-top: 5%  ;
+    }
+    #norly #desc1 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: bold  ;
+        margin-top: 5%  ;
+    }
+    #norly #desc2 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: normal  ;
+        color: #373737  ;
+    }
+    #norly #name {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: normal  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #norly #email {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        margin-top: 5%  ;
+        margin-left: 2%  ;
+    }
+    #norly #emailLink {
+        position: relative  ;
+        width: 75%  ;
+        height: 10vw  ;
+        margin-top: 8%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 4vw  ;
+    }
+    #norly #facebook {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        margin-top: 3%  ;
+        margin-left: 2%;
+    }
+    #norly #facebookLink {
+        position: relative  ;
+        width: 75%  ;
+        height: auto  ;
+        margin-top: 6%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 3.8vw  ;
+    }
+
+    
+
+    #jeffrey {
+        position: relative  ;
+        width: 65vw  ;
+        height: 85vw  ;
+        background-color: #d9d9d9 ;
+        margin-left: 17.5%  ;
+        margin-top: 5%  ;
+        border-radius: 20px  ;
+        margin-bottom: 20%  ;
+    }
+    #jeffrey img {
+        position: relative  ;
+        width: 30vw  ;
+        height: 30vw  ;
+        border-radius: 50%  ;
+        margin-left: 27%  ;
+        margin-top: 5%  ;
+    }
+    #jeffrey #desc1 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: bold  ;
+        margin-top: 5%  ;
+    }
+    #jeffrey #desc2 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: normal  ;
+        color: #373737  ;
+    }
+    #jeffrey #name {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        font-weight: normal  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #jeffrey #email {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        margin-top: 5%  ;
+        margin-left: 2%  ;
+    }
+    #jeffrey #emailLink {
+        position: relative  ;
+        width: 75%  ;
+        height: 10vw  ;
+        margin-top: 6%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 4vw  ;
+    }
+    #jeffrey #facebook {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        margin-top: 3%  ;
+        margin-left: 2%;
+    }
+    #jeffrey #facebookLink {
+        position: relative  ;
+        width: 75%  ;
+        height: auto  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 3.8vw  ;
+    }
+}
+
+
+
+
+
+@media (min-width: 801px) {
+    * {
+        -moz-user-select: -moz-none  ;
+        -khtml-user-select: none  ;
+        -webkit-user-select: none  ;
+        -ms-user-select: none  ;
+        user-select: none  ;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif  ;
+    }
+    ::-webkit-scrollbar {
+        width: 0.7vw  ;
+        background-color: gainsboro  ;
+    }
+    ::-webkit-scrollbar-thumb  {
+        background-color: palevioletred  ;
+        border-radius: 10px 10px 10px 10px  ;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: mediumvioletred  ;
+    }
+    body {
+        width: 100vw  ;
+        background-color: white  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        overflow-x: hidden  ;
+        overflow-y: hidden  ;
+    }
+    .nav {
+        position: fixed  ;
+        z-index: 10  ;
+        top: 0  ;
+        width: 100%  ;
+        height: 4vw  ;
+        background-color: transparent  ;
+        text-align: right  ;
+    }
+    #logo {
+        position: sticky  ;
+        width: 6vw  ;
+        height: 4vw  ;
+        background-color: transparent  ;
+    }
+    #home, #signUp, #about, #contact {
+        position: relative  ;
+        bottom: 0  ;
+        margin: 0 1% 0 0   ;
+        float: none  ;
+        color: #b0784b  ;
+        font-size: 2.5vw  ;
+        text-align: right  ;
+        text-decoration: none  ;
+    }
+    circle {
+        position: absolute;
+        margin-top: 3vw  ;
+        margin-left: -8%  ;
+        width: 0.5vw  ;
+        height: 0.5vw  ;
+        border: solid thin #b0784b  ;
+        border-radius: 100%  ;
+        background-color: #b0784b  ;
+    }
+    .settingsBox {
+        display: none  ;
+        position: fixed  ;
+        z-index: 10  ;
+        margin: 36% 0 0 79%  ;
+        background-color:  white  ;
+        border: solid thin skyblue  ;
+        border-radius: 10px 10px 10px 10px  ;
+        background-size: cover  ;
+        width: 20%  ;
+        height: 12vw  ;
+    }
+    .settingsBox .theme {
+        width: 100%  ;
+        height: 33%  ;
+        background-color: transparent  ;
+        border-bottom-style: solid  ;
+        border-bottom-color: gray  ;
+    }
+    .settingsBox .theme button{
+        width: 33%  ;
+        height: 100%  ;
+        background-color: transparent  ;
+        text-align: center  ;
+        font-size: 1.5vw  ;
+        color: black  ;
+    }
+    .settingsBox .bot {
+        width: 100%  ;
+        height: 33%  ;
+        background-color: transparent  ;
+        border-bottom-style: solid  ;
+        border-bottom-color: gray  ;
+    }
+    .settingsBox .bot button{
+        width: 50%  ;
+        height: 100%  ;
+        text-align: center  ;
+        font-size: 1.5vw  ;
+        color: black  ;
+        background-color: transparent  ;
+    }
+    .settingsBox .language {
+        width: 100%  ;
+        height: 33%  ;
+        background-color: transparent  ;
+    }
+    .settingsBox .language button {
+        width: 50%  ;
+        height: 100%  ;
+        text-align: center  ;
+        font-size: 1.5vw  ;
+        color: black  ;
+        background-color: transparent  ;
+    }
+    #theme {
+        position: fixed  ;
+        bottom: 2%  ;
+        right: 1%  ;
+        z-index: 10  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: transparent  ;
+        background-image: url('../Images/Icons/inDarkBulb.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+        border: none  ;
+    }
+    #moreHint {
+        display: none  ;
+    }
+    #settings {
+        position: fixed  ;
+        background-color: transparent  ;
+        margin: 49% 0 0 96%  ;
+        z-index: 10  ;
+        width: 3vw  ;
+        height: 3vw  ;
+    }
+    #summaryTop {
+        position: fixed  ;
+        margin: 6% 0 0 2.5%  ;
+        width: 95%  ;
+        font-size: 2vw  ;
+        text-align: center  ;
+        text-align: left  ;
+        text-align: justify ;
+        text-indent: 2em  ;
+    }
+    #feedback {
+        position: fixed  ;
+        width: 20%  ;
+        height: 3vw  ;
+        margin: 14% 0 0 29%  ;
+        text-align: center  ;
+        font-size: 1.5vw  ;
+        border-radius: 20px 20px 20px 20px;
+        background-color: lightgray  ;
+        opacity: 0.5  ;
+    }
+    #developers {
+        position: fixed  ;
+        width: 20%  ;
+        height: 3vw  ;
+        margin: 14% 0 0 51%  ;
+        text-align: center  ;
+        font-size: 1.5vw  ;
+        border-radius: 20px 20px 20px 20px;
+        background-color: lightgray  ;
+    }
+    #feedbackLink {
+        width: 100%  ;
+        text-align: center  ;
+        color: #373737;
+    }
+
+
+    .devList {
+        position: relative  ;
+        width: 180vw  ;
+        height: auto  ;
+        margin-top: 12%  ;
+        margin-left: 0%  ;
+        background-color: transparent  ;
+    }
+    .devList.slideToRight {
+        animation-name: slideToRight  ;
+        animation-fill-mode: forwards  ;
+        animation-iteration-count: 1  ;
+        animation-timing-function: ease-in-out  ;
+        animation-duration: 1.5s  ;
+    }
+    @keyframes slideToRight {
+        from { margin-left: 0%  ; }
+        to { margin-left: -50%  ; }
+    }
+    .devList.slideToLeft {
+        animation-name: slideToLeft  ;
+        animation-fill-mode: forwards  ;
+        animation-iteration-count: 1  ;
+        animation-timing-function: ease-in-out  ;
+        animation-duration: 1.5s  ;
+    }
+    @keyframes slideToLeft {
+        from { margin-left: -50%  ; }
+        to { margin-left: 0%  ; }
+    }
+    #jason {
+        position: relative  ;
+        width: 20vw  ;
+        height: 30vw  ;
+        background-color: #d9d9d9 ;
+        margin-left: 5%  ;
+        border-radius: 20px  ;
+    }
+    #jason img {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        border-radius: 50%  ;
+        margin-left: 27%  ;
+        margin-top: 5%  ;
+    }
+    #jason #desc1 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: bold  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #jason #desc2 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: normal  ;
+        color: #373737  ;
+    }
+    #jason #name {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: normal  ;
+        margin-top: 10%  ;
+        color: #373737  ;
+    }
+    #jason #email {
+        position: relative  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        margin-top: 2%  ;
+        margin-left: 2%  ;
+    }
+    #jason #emailLink {
+        position: relative  ;
+        width: 75%  ;
+        height: 3vw  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 1.2vw  ;
+    }
+    #jason #facebook {
+        position: relative  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        margin-top: 3%  ;
+        margin-left: 2%;
+    }
+    #jason #facebookLink {
+        position: relative  ;
+        width: 75%  ;
+        height: auto  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 1.2vw  ;
+    }
+    #rose {
+        position: relative  ;
+        width: 20vw  ;
+        height: 30vw  ;
+        background-color: #d9d9d9 ;
+        margin-left: 5%  ;
+        border-radius: 20px  ;
+    }
+    #rose img {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        border-radius: 50%  ;
+        margin-left: 27%  ;
+        margin-top: 5%  ;
+    }
+    #rose #desc1 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: bold  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #rose #desc2 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: normal  ;
+        color: #373737  ;
+    }
+    #rose #name {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: normal  ;
+        margin-top: 10%  ;
+        color: #373737  ;
+    }
+    #rose #email {
+        position: relative  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        margin-top: 2%  ;
+        margin-left: 2%  ;
+    }
+    #rose #emailLink {
+        position: relative  ;
+        width: 75%  ;
+        height: 3vw  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 1.2vw  ;
+    }
+    #rose #facebook {
+        position: relative  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        margin-top: 3%  ;
+        margin-left: 2%;
+    }
+    #rose #facebookLink {
+        position: relative  ;
+        width: 75%  ;
+        height: auto  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 1.2vw  ;
+    }
+    #jenny {
+        position: relative  ;
+        width: 20vw  ;
+        height: 30vw  ;
+        background-color: #d9d9d9 ;
+        margin-left: 5%  ;
+        border-radius: 20px  ;
+    }
+    #jenny img {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        border-radius: 50%  ;
+        margin-left: 27%  ;
+        margin-top: 5%  ;
+    }
+    #jenny #desc1 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: bold  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #jenny #desc2 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: normal  ;
+        color: #373737  ;
+    }
+    #jenny #name {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: normal  ;
+        margin-top: 10%  ;
+        color: #373737  ;
+    }
+    #jenny #email {
+        position: relative  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        margin-top: 2%  ;
+        margin-left: 2%  ;
+    }
+    #jenny #emailLink {
+        position: relative  ;
+        width: 75%  ;
+        height: 3vw  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 1.2vw  ;
+    }
+    #jenny #facebook {
+        position: relative  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        margin-top: 3%  ;
+        margin-left: 2%;
+    }
+    #jenny #facebookLink {
+        position: relative  ;
+        width: 75%  ;
+        height: auto  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 1.2vw  ;
+    }
+    #slideArrow {
+        position: relative  ;
+        margin-left: 2.5%  ;
+        margin-top: 5%  ;
+    }
+    #norly {
+        position: relative  ;
+        width: 20vw  ;
+        height: 30vw  ;
+        background-color: #d9d9d9 ;
+        margin-left: 5%  ;
+        border-radius: 20px  ;
+    }
+    #norly img {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        border-radius: 50%  ;
+        margin-left: 27%  ;
+        margin-top: 5%  ;
+    }
+    #norly #desc1 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: bold  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #norly #desc2 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: normal  ;
+        color: #373737  ;
+    }
+    #norly #name {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: normal  ;
+        margin-top: 10%  ;
+        color: #373737  ;
+    }
+    #norly #email {
+        position: relative  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        margin-top: 2%  ;
+        margin-left: 2%  ;
+    }
+    #norly #emailLink {
+        position: relative  ;
+        width: 75%  ;
+        height: 3vw  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 1.2vw  ;
+    }
+    #norly #facebook {
+        position: relative  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        margin-top: 3%  ;
+        margin-left: 2%;
+    }
+    #norly #facebookLink {
+        position: relative  ;
+        width: 75%  ;
+        height: auto  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 1.2vw  ;
+    }
+    #jeffrey {
+        position: relative  ;
+        width: 20vw  ;
+        height: 30vw  ;
+        background-color: #d9d9d9 ;
+        margin-left: 5%  ;
+        border-radius: 20px  ;
+    }
+    #jeffrey img {
+        position: relative  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        border-radius: 50%  ;
+        margin-left: 27%  ;
+        margin-top: 5%  ;
+    }
+    #jeffrey #desc1 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: bold  ;
+        margin-top: 5%  ;
+        color: #373737  ;
+    }
+    #jeffrey #desc2 {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.6vw  ;
+        font-weight: normal  ;
+        color: #373737  ;
+    }
+    #jeffrey #name {
+        width: 100%  ;
+        text-align: center  ;
+        font-size: 1.8vw  ;
+        font-weight: normal  ;
+        margin-top: 10%  ;
+        color: #373737  ;
+    }
+    #jeffrey #email {
+        position: relative  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        margin-top: 2%  ;
+        margin-left: 2%  ;
+    }
+    #jeffrey #emailLink {
+        position: relative  ;
+        width: 75%  ;
+        height: 3vw  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 1.2vw  ;
+    }
+    #jeffrey #facebook {
+        position: relative  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        margin-top: 3%  ;
+        margin-left: 2%;
+    }
+    #jeffrey #facebookLink {
+        position: relative  ;
+        width: 75%  ;
+        height: auto  ;
+        margin-top: 4%  ;
+        margin-left: 2%  ;
+        word-break: break-all;
+        color: #373737  ;
+        font-size: 1.2vw  ;
+    }
+
+
+
+
+}

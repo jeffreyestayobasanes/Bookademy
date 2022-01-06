@@ -1,0 +1,235 @@
+@media (min-width: 300px){
+    * {
+        -moz-user-select: -moz-none  ;
+        -khtml-user-select: none  ;
+        -webkit-user-select: none  ;
+        -ms-user-select: none  ;
+        user-select: none  ;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif  ;
+    }
+    ::-webkit-scrollbar {
+        width: 0.7vw  ;
+        background-color: gainsboro  ;
+    }
+    ::-webkit-scrollbar-thumb  {
+        background-color: palevioletred  ;
+        border-radius: 10px 10px 10px 10px  ;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: mediumvioletred  ;
+    }
+    body {
+        width: 100vw  ;
+        background-color: white  ;
+    }
+    .nav {
+        position: fixed  ;
+        top: 0  ;
+        width: 100%  ;
+        height: 8vw  ;
+        background-color: white  ;
+        z-index: 10  ;
+    }
+    #logo {
+        position: absolute   ;
+        width: 15%  ;
+        height: 8vw  ;
+        background-color: transparent  ;
+    }
+    #home, #signUp, #about, #contact {
+        position: absolute  ;
+        color: #b0784b  ;
+        font-size: 3.5vw  ;
+        text-decoration: none  ;
+    }
+    #home {
+        margin: 2% 0 0 0%   ;
+    }
+    #signUp {
+        margin: 2% 0 0 13%   ;
+    }
+    #about {
+        margin: 2% 0 0 24%   ;
+    }
+    #contact {
+        margin: 2% 0 0 42%   ;
+    }
+    circle {
+        position: absolute;
+        margin-top: 6%  ;
+        margin-left: 44%  ;
+        width: 0.5vw  ;
+        height: 0.5vw  ;
+        border: solid thin #b0784b  ;
+        border-radius: 100%  ;
+        background-color: #b0784b  ;
+    }
+    .settingsBox {
+        display: none  ;
+        position: fixed  ;
+        z-index: 10  ;
+        margin: 36% 0 0 79%  ;
+        background-color:  white  ;
+        border: solid thin skyblue  ;
+        border-radius: 10px 10px 10px 10px  ;
+        background-size: cover  ;
+        width: 20%  ;
+        height: 12vw  ;
+    }
+    .settingsBox .theme {
+        width: 100%  ;
+        height: 33%  ;
+        background-color: transparent  ;
+        border-bottom-style: solid  ;
+        border-bottom-color: gray  ;
+    }
+    .settingsBox .theme button{
+        width: 33%  ;
+        height: 100%  ;
+        background-color: transparent  ;
+        text-align: center  ;
+        font-size: 1.5vw  ;
+        color: black  ;
+    }
+    .settingsBox .bot {
+        width: 100%  ;
+        height: 33%  ;
+        background-color: transparent  ;
+        border-bottom-style: solid  ;
+        border-bottom-color: gray  ;
+    }
+    .settingsBox .bot button{
+        width: 50%  ;
+        height: 100%  ;
+        text-align: center  ;
+        font-size: 1.5vw  ;
+        color: black  ;
+        background-color: transparent  ;
+    }
+    .settingsBox .language {
+        width: 100%  ;
+        height: 33%  ;
+        background-color: transparent  ;
+    }
+    .settingsBox .language button {
+        width: 50%  ;
+        height: 100%  ;
+        text-align: center  ;
+        font-size: 1.5vw  ;
+        color: black  ;
+        background-color: transparent  ;
+    }
+    #settings {
+        position: fixed  ;
+        margin: 85vh 0 0 90%  ;
+        z-index: 10  ;
+        width: 8vw  ;
+        height: 8vw  ;
+        background-color: transparent  ;
+    }
+    .content {
+        width: 100%  ;
+        height: auto  ;
+        background-color: bisque  ;
+    }
+    h1 {
+        position: absolute  ;
+        margin-top: 30%  ;
+        font-size: 8vw  ;
+        width: 100%  ;
+        text-align: center  ;
+    }
+    form {
+        position: absolute  ;
+        margin-top: 40%  ;
+        margin-left: 10%  ;
+        width: 80%  ;
+        height: 85vw  ;
+        background-color: darkgray  ;
+        border-radius: 20px 20px 20px 20px  ;
+    }
+    p, input, button, a {
+        position: absolute  ;
+        font-size: 5vw  ;
+        color: white  ;
+    }
+    input {
+        text-align: center  ;
+        height: 5vw  ;
+        font-size: 4vw  ;
+        background-color: lightgray ;
+    }
+    #email, #username, #password {
+        display: none  ;
+    }
+    #emailField {
+        position: absolute  ;
+        margin-top: 5%  ;
+        margin-left: 10%  ;
+        width: 80%  ;
+        height: 10vw  ;
+    }
+    #username {
+        margin-top: 14%  ;
+        margin-left: 5%  ;
+    }
+    #usernameField {
+        position: absolute  ;
+        margin-top: 20%  ;
+        margin-left: 10%  ;
+        width: 80%  ;
+        height: 10vw  ;
+    }
+    #passwordField {
+        position: absolute  ;
+        margin-top: 35%  ;
+        margin-left: 10%  ;
+        width: 80%  ;
+        height: 10vw  ;
+    }
+    #passwordToggle {
+        position: absolute  ;
+        margin-top: 35%  ;
+        margin-left: 80%  ;
+        width: 10%  ;
+        height: 10vw  ;
+        background-color: lightgray  ;
+    }
+    #signUpBtn {
+        position: absolute  ;
+        margin-top: 55%  ;
+        margin-left: 35%  ;
+        width: 30%  ;
+        height: 10vw  ;
+        text-align: center  ;
+        color: white  ;
+        border-radius: 10px 10px 10px 10px  ;
+        background-color: #623a1a  ;
+    }
+    #bottomText1 {
+        text-align: center  ;
+        font-size: 5vw  ;
+        margin-top: 75%  ;
+        width: 100%  ;
+    }
+    a {
+        text-align: right  ;
+        font-size: 5vw  ;
+        margin-top: 83%  ;
+        width: 49%  ;
+        color: blue  ;
+    }
+    #bottomText2 {
+        text-align: left  ;
+        font-size: 5vw  ;
+        margin-top: 83%  ;
+        margin-left: 51%  ;
+        width: 49%  ;
+    }
+}

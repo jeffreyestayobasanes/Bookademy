@@ -1,0 +1,167 @@
+@media (max-width: 800px){
+    * {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        width: 100vw  ;
+    }
+    #banner {
+        position: absolute  ;
+        width: 90%  ;
+        height: 60vw  ;
+        margin-top: 35%  ;
+        margin-left: 5%  ;
+        background-image: url('../Images/Icons/editorsChoice.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+    }
+    #btnStart {
+        position: absolute  ;
+        width: 50vw  ;
+        height: 25vw  ;
+        margin-top: 65%  ;
+        margin-left: 25%  ;
+        background-color: gray  ;
+        border-radius: 50% 50% 50% 50%  ;
+        text-align: center  ;
+        font-size: 7vw  ;
+        font-weight: bold  ;
+        color: white  ;
+        
+    }
+    #previous {
+        position: absolute  ;
+        margin-top: 132% ;
+        margin-left: 5%  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        background-image: url('../Images/Icons/left.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #bar {
+        position: fixed  ;
+        width: 70vw  ;
+        height: 2vw  ;
+        margin-top: 145%  ;
+        margin-left: 15%  ;
+        background-color: chocolate  ;
+    }
+    #progress {
+        bottom: 10%  ;
+        width: 100%  ;
+        height: 2vw  ;
+        background-color: yellowgreen  ;
+
+    }
+    #number {
+        position: relative  ;
+        width: 7vw  ;
+        height: 7vw  ;
+        margin-left: 95%  ;
+        margin-top: -8%  ;
+        padding-top: 1%  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        border: solid thin white  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        color: white  ;
+    }
+}
+
+
+
+@media (min-width: 801px){
+    * {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        width: 100vw  ;
+    }
+    #banner {
+        position: absolute  ;
+        width: 60%  ;
+        height: 40vw  ;
+        margin-top: 5%  ;
+        margin-left: 20%  ;
+        background-image: url('../Images/Icons/editorsChoice.png')  ;
+        background-size: contain  ;
+        background-repeat: no-repeat  ;
+    }
+    #btnStart {
+        position: absolute  ;
+        width: 40%  ;
+        height: 20vw  ;
+        margin-top: 25%  ;
+        margin-left: 30%  ;
+        background-color: gray  ;
+        border-radius: 50% 50% 50% 50%  ;
+        text-align: center  ;
+        font-size: 7vw  ;
+        font-weight: bold  ;
+        color: white  ;
+        
+    }
+    #previous {
+        position: absolute  ;
+        margin-top: 45% ;
+        margin-left: 5%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/left.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #bar {
+        position: absolute  ;
+        width: 60vw  ;
+        height: 0.4vw  ;
+        margin-top: 50%  ;
+        margin-left: 20%  ;
+        background-color: chocolate  ;
+    }
+    #progress {
+        bottom: 10%  ;
+        width: 100%  ;
+        height: 100%  ;
+        background-color: yellowgreen  ;
+
+    }
+    #number {
+        position: absolute  ;
+        width: 4vw  ;
+        height: 4vw  ;
+        margin-left: 95%  ;
+        margin-top: -3%  ;
+        padding-top: 1%  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        border: solid thin white  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+    }
+}

@@ -1,0 +1,416 @@
+@media (max-width: 800px) {
+    * {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        width: 100vw  ;
+    }
+    h1 {
+        width: 100%  ;
+        font-size: 7vw  ;
+        text-align: center  ;
+        margin-top: 5%  ;
+        font-weight: normal  ;
+    }
+    #light {
+        position: absolute  ;
+        width: 40vw  ;
+        height: 50vw  ;
+        background-color: lightgray ;
+        margin-left: 5%  ;
+        margin-top: 20%  ;
+        border-radius: 20px  ;
+    }
+    #light div {
+        position: relative;
+        width: 60%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/sun.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #light h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #dark {
+        position: absolute  ;
+        width: 40vw  ;
+        height: 50vw  ;
+        background-color: lightgray ;
+        margin-left: 55%  ;
+        margin-top: 20%  ;
+        border-radius: 20px  ;
+    }
+    #dark div {
+        position: relative;
+        width: 70%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/moon.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #dark h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #timed {
+        position: absolute  ;
+        width: 40vw  ;
+        height: 50vw  ;
+        background-color: lightgray ;
+        margin-left: 30%  ;
+        margin-top: 80%  ;
+        border-radius: 20px  ;
+    }
+    #timed div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/time.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #timed h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #check1 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 71%  ;
+        margin-left: 23%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+
+    }
+    #check2 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 71%  ;
+        margin-left: 73%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+
+    }
+    #check3 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 132%  ;
+        margin-left: 50%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+
+    }
+    #theme {
+        display: none  ;
+    }
+    #previous {
+        position: absolute  ;
+        margin-top: 132% ;
+        margin-left: -95%  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        background-image: url('../Images/Icons/left.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #next {
+        position: absolute  ;
+        margin-top: 132% ;
+        margin-left: -15%  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        background-image: url('../Images/Icons/right.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #bar {
+        position: absolute  ;
+        width: 70vw  ;
+        height: 2vw  ;
+        margin-top: 145%  ;
+        margin-left: 15%  ;
+        background-color: chocolate  ;
+    }
+    #progress {
+        position: relative  ;
+        width: 45%  ;
+        height: 2vw  ;
+        background-color: yellowgreen  ;
+
+    }
+    #number {
+        position: relative  ;
+        width: 7vw  ;
+        height: 7vw  ;
+        margin-left: 45%  ;
+        margin-top: -8%  ;
+        padding-top: 1%  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        border: solid thin white  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        color: white  ;
+    }
+}
+
+
+@media (min-width: 801px) {
+    * {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        width: 100vw  ;
+    }
+    h1 {
+        width: 100%  ;
+        font-size: 4vw  ;
+        text-align: center  ;
+        margin-top: 5%  ;
+        font-weight: normal  ;
+    }
+    #light {
+        position: absolute  ;
+        width: 20vw  ;
+        height: 25vw  ;
+        background-color: lightgray ;
+        margin-left: 15%  ;
+        margin-top: 14%  ;
+        border-radius: 20px  ;
+    }
+    #light div {
+        position: relative;
+        width: 60%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/sun.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #light h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #dark {
+        position: absolute  ;
+        width: 20vw  ;
+        height: 25vw  ;
+        background-color: lightgray ;
+        margin-left: 40%  ;
+        margin-top: 14%  ;
+        border-radius: 20px  ;
+    }
+    #dark div {
+        position: relative;
+        width: 70%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/moon.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #dark h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #timed {
+        position: absolute  ;
+        width: 20vw  ;
+        height: 25vw  ;
+        background-color: lightgray ;
+        margin-left: 65%  ;
+        margin-top: 14%  ;
+        border-radius: 20px  ;
+    }
+    #timed div {
+        position: relative;
+        width: 75%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/time.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #timed h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #check1 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 40%  ;
+        margin-left: 23%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+
+    }
+    #check2 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 40%  ;
+        margin-left: 47.5%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+
+    }
+    #check3 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 40%  ;
+        margin-left: 73%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+
+    }
+    #theme {
+        display: none  ;
+    }
+    #previous {
+        position: absolute  ;
+        margin-top: 45% ;
+        margin-left: -95%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/left.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #next {
+        position: absolute  ;
+        margin-top: 45% ;
+        margin-left: -15%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/right.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #bar {
+        position: absolute  ;
+        width: 60vw  ;
+        height: 0.4vw  ;
+        margin-top: 50%  ;
+        margin-left: 20%  ;
+        background-color: chocolate  ;
+    }
+    #progress {
+        bottom: 10%  ;
+        width: 45%  ;
+        height: 100%  ;
+        background-color: yellowgreen  ;
+
+    }
+    #number {
+        position: absolute  ;
+        width: 4vw  ;
+        height: 4vw  ;
+        margin-left: 45%  ;
+        margin-top: -3%  ;
+        padding-top: 1%  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        border: solid thin white  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+    }
+}

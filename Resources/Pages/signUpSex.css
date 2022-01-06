@@ -1,0 +1,309 @@
+@media (max-width: 800px) {
+    * {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        width: 100vw  ;
+    }
+    h1 {
+        width: 100%  ;
+        font-size: 7vw  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #male {
+        width: 40vw  ;
+        height: 50vw  ;
+        background-color: lightgray ;
+        margin-left: 5%  ;
+        margin-top: 5%  ;
+        border-radius: 20px  ;
+    }
+    #male div {
+        position: relative;
+        width: 60%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/inLightMale.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #male h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #female {
+        width: 40vw  ;
+        height: 50vw  ;
+        background-color: lightgray ;
+        margin-left: 5%  ;
+        margin-top: 5%  ;
+        border-radius: 20px  ;
+    }
+    #female div {
+        position: relative;
+        width: 60%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/inLightFemale.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #female h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #check1 {
+        display: none  ;
+        margin-top: 2%  ;
+        margin-left: 23%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+
+    }
+    #check2 {
+        display: none  ;
+        margin-top: 2%  ;
+        margin-left: 68%  ;  /* 23 63*/
+        width: 5vw  ;
+        height: 5vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+
+    }
+    #sex {
+        display: none  ;
+    }
+    #next {
+        position: absolute  ;
+        margin-top: 99%  ;
+        margin-left: -5%  ;
+        width: 10vw  ;
+        height: 10vw  ;
+        background-image: url('../Images/Icons/right.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #bar {
+        position: absolute  ;
+        width: 70vw  ;
+        height: 2vw  ;
+        margin-top: 145%  ;
+        margin-left: 15%  ;
+        background-color: chocolate  ;
+    }
+    #progress {
+        position: relative  ;
+        width: 25%  ;
+        height: 100%  ;
+        background-color: yellowgreen  ;
+
+    }
+    #number {
+        position: fixed  ;
+        width: 7vw  ;
+        height: 7vw  ;
+        margin-left: 15%  ;
+        margin-top: -3%  ;
+        padding-top: 1%  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        border: solid thin white  ;
+        text-align: center  ;
+        font-size: 5vw  ;
+        color: white  ;
+    }
+}
+
+
+@media (min-width: 801px) {
+    * {
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0  ;
+        padding: 0  ;
+        float: left  ;
+        border: none  ;
+        outline: none  ;
+        text-decoration: none  ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        width: 100vw  ;
+    }
+    #hide {
+        color: white  ;
+        display: none  ;
+    }
+    h1 {
+        width: 100%  ;
+        font-size: 4vw  ;
+        text-align: center  ;
+        margin-top: 8%  ;
+        font-weight: normal  ;
+    }
+    #male {
+        position: absolute  ;
+        width: 20vw  ;
+        height: 25vw  ;
+        background-color: lightgray ;
+        margin-left: 25%  ;
+        margin-top: 14%  ;
+        border-radius: 20px  ;
+    }
+    #male div {
+        position: relative;
+        width: 60%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/inLightMale.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #male h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #female {
+        position: absolute  ;
+        width: 20vw  ;
+        height: 25vw  ;
+        background-color: lightgray ;
+        margin-left: 50%  ;
+        margin-top: 14%  ;
+        border-radius: 20px  ;
+    }
+    #female div {
+        position: relative;
+        width: 60%  ;
+        height: 60%  ;
+        margin-top: 5%  ;
+        margin-left: 14%  ;
+        background-image: url('../Images/Icons/inLightFemale.png')  ;
+        background-size: cover  ;
+        background-repeat: no-repeat  ;
+        border: 0  ;
+        outline: none  ;
+        background-color: transparent  ;
+    }
+    #female h2 {
+        position: relative  ;
+        width: 100%  ;
+        text-align: center  ;
+        margin-top: 25%  ;
+        font-weight: normal  ;
+    }
+    #check1 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 40%  ;
+        margin-left: 34%  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 2vw  ;
+        color: white  ;
+
+    }
+    #check2 {
+        display: none  ;
+        position: absolute  ;
+        margin-top: 40%  ;
+        margin-left: 59%  ;
+        width: 3vw  ;
+        height: 3vw  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        text-align: center  ;
+        font-size: 2vw  ;
+        color: white  ;
+
+    }
+    #sex {
+        display: none  ;
+    }
+    #next {
+        position: absolute  ;
+        margin-top: 45%  ;
+        margin-left: -15%  ;
+        width: 5vw  ;
+        height: 5vw  ;
+        background-image: url('../Images/Icons/right.png')  ;
+        background-size: cover  ;
+        background-color: transparent  ;
+    }
+    #bar {
+        position: absolute  ;
+        width: 60vw  ;
+        height: 0.4vw  ;
+        margin-top: 50%  ;
+        margin-left: 20%  ;
+        background-color: chocolate  ;
+    }
+    #progress {
+        bottom: 10%  ;
+        width: 20%  ;
+        height: 100%  ;
+        background-color: yellowgreen  ;
+    }
+    #number {
+        position: fixed  ;
+        width: 4vw  ;
+        height: 4vw  ;
+        margin-left: 10%  ;
+        margin-top: -2%  ;
+        padding-top: 1%  ;
+        background-color: yellowgreen  ;
+        border-radius: 50%  ;
+        border: solid thin white  ;
+        text-align: center  ;
+        font-size: 3vw  ;
+        color: white  ;
+    }
+}
